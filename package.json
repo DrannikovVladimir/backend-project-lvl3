@@ -1,0 +1,32 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/DrannikovVladimir/backend-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/DrannikovVladimir/backend-project-lvl3/actions)",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "page-loader": "bin/page-loader.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrannikovVladimir/backend-project-lvl3.git"
+  },
+  "author": "Drannikov Vladimir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrannikovVladimir/backend-project-lvl3/issues"
+  },
+  "homepage": "https://github.com/DrannikovVladimir/backend-project-lvl3#readme",
+  "devDependencies": {
+    "eslint": "^8.4.1",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.3"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "commander": "^8.3.0"
+  }
+}
