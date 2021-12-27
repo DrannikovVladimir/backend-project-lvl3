@@ -1,0 +1,574 @@
+<!DOCTYPE html><html lang="ru" prefix="og: https://ogp.me/ns#"><head>
+<title>Хекслет — больше чем школа программирования. Онлайн курсы, сообщество программистов</title>
+<meta name="description" content="Живое онлайн сообщество программистов и разработчиков на JS, Python, Java, PHP, Ruby. Авторские программы обучения с практикой и готовыми проектами в резюме. Помощь в трудоустройстве после успешного окончания обучения">
+<link rel="canonical" href="https://ru.hexlet.io/">
+<link rel="image_src" href="https://cdn2.hexlet.io/assets/toto_welcome-371b71d1c4ffede62780e53b1b8582679931f49bb76480a5143a60a0d0a30400.jpg">
+<meta property="og:description" content="Живое онлайн сообщество программистов и разработчиков на JS, Python, Java, PHP, Ruby. Авторские программы обучения с практикой и готовыми проектами в резюме. Помощь в трудоустройстве после успешного окончания обучения">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Хекслет — больше чем школа программирования">
+<meta property="og:url" content="https://ru.hexlet.io/">
+<meta property="og:image" content="https://cdn2.hexlet.io/assets/toto_welcome-371b71d1c4ffede62780e53b1b8582679931f49bb76480a5143a60a0d0a30400.jpg">
+<meta property="og:site_name" content="Хекслет">
+<meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="H2m26k16QiA9PWTJctjhhsvoKc5gQxGTNYAhDSOZCFw9MQfSkUrEBHfiRNkIcjMsOJhuXVhROdVWK9qBC7VyRQ">
+<meta name="csp-nonce">
+<link rel="shortcut icon" type="image/x-icon" href="https://cdn2.hexlet.io/assets/favicon-2c49cf49c44e5388df35976abd2eb9ce820e722edfe2e6604f1fe357e2f940da.ico">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta charset="utf-8">
+<meta content="IE=Edge" http-equiv="X-UA-Compatible">
+<meta content="b9d3902d34" name="verify-admitad">
+
+<link rel="stylesheet" media="all" href="https://cdn2.hexlet.io/packs/css/application-a2fd2123.css">
+<script>
+//<![CDATA[
+window.gon={};gon.fired_events={};gon.is_bot=false;gon.applications={};gon.current_user={"id":null,"email":null,"username":null,"created_at":"2021-12-27T10:31:52.638Z","last_viewed_notification_id":null,"paid_days_count":0,"full_name":"","text":" ()","is_guest":true,"is_mentor":false,"is_tutor":false,"is_hexlet_employee":false,"current_company":null,"can_use_paid_features":false,"current_program":null,"is_active_group_member":false};gon.token="sJ-b1m3zZq2SVqTLqo5W6D1MjiNPUWhWAsfj7v3VTTeSxyruscPgidiJhNvQJIRCzjzJsHdDQBBhbBhi1fk3Lg";gon.events=["signed_up","lead_created","company_created","product_payment_paid","subscription_paid","test","show_lead_modal","exercise_started","blog_post_moderation_submitted"];gon.disqus_name="hexletio";gon.locale="ru";gon.rails_env="production";gon.mobile=false;gon.google={"analytics_key":"UA-1360700-51","optimize_key":"GTM-5QDVFPF"};gon.recaptcha={"site_key_v3":"6LenGbgZAAAAAM7HbrDbn5JlizCSzPcS767c9vaY"};gon.social_signin=false;gon.typoreporter_google_form_id="1FAIpQLSeibfGq-KvWQ2Fyru-zkFFRVTLBuzXAHAoEyN1p49FtDmNoNA";
+//]]>
+</script>
+<script>
+  (function() {
+    var script = document.createElement('script');
+    script.setAttribute('src', 'https://browser.sentry-cdn.com/6.16.1/bundle.min.js');
+    script.setAttribute('defer', 'true');
+    script.onload = function () {
+      Sentry.init({
+        dsn: 'https://5e408926ab534fba9c66d8f620d1f58b@o1090356.ingest.sentry.io/6106229',
+        environment: 'production',
+        release: 'v6274',
+        initialScope: {
+          user: gon.current_user
+        },
+        ignoreErrors: [
+          'top.GLOBALS', // Random plugins/extensions
+          'VK is ',
+          'VK.Retargeting is ',
+          'pktAnnotationHighlighter',
+          'amplitude',
+          'google_tag_manager',
+          'Unexpected keyword',
+          'illegal character',
+          'Unexpected identifier',
+          'Illegal invocation',
+          'missing = in const declaration',
+        ],
+        allowUrls: [/https?:\/\/((cdn|cdn2|ru|en)\.)?hexlet\.io/]
+      });
+    };
+    document.head.appendChild(script);
+  })();
+</script>
+
+<script>
+  window.EventsMapping = {
+    on: function(eventName, callback) {
+      if (gon.events.indexOf(eventName) === -1) {
+        throw new Error('Undefined event name ' + eventName + '. Check gon.events.');
+      }
+  
+      if (!gon.fired_events.hasOwnProperty(eventName)) {
+        return;
+      }
+      var options = gon.fired_events[eventName];
+  
+      callback(eventName, options);
+    }
+  };
+  
+  // for custom scroll trigger in gtm
+  var onceScrollHandler = function () {
+    var events = window.dataLayer || [];
+    events.push({event: 'real_first_scroll'});
+    window.removeEventListener('scroll', onceScrollHandler, false);
+  };
+  window.addEventListener('scroll', onceScrollHandler);
+  
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-WK88TH');
+</script>
+
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"Hexlet","url":"https://hexlet.io","sameAs":["https://www.facebook.com/Hexlet","https://www.youtube.com/user/HexletUniversity","https://twitter.com/HexletHQ","https://soundcloud.com/hexlet"],"legalName":"Hexlet Ltd.","address":"UMA Esplanadi, Pohjoisesplanadi 39, 00100 Helsinki, Finland","vatID":"VAT ID: FI26641607","telephone":"+7 495 147 73 79","logo":{"@type":"ImageObject","url":"https://cdn2.hexlet.io/assets/hexlet_logo-e99fc2b3b7c1eec88899f3af1435a39aaac6fd29d011dfe2342499c0884b7a96.png"}}</script>
+
+
+<link href="https://en.hexlet.io/" hreflang="en" rel="alternate">
+
+
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WK88TH"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+<div class="container">
+<header class="navbar navbar-light navbar-expand-lg border-bottom align-items-center py-lg-3 mb-4">
+<a aria-hidden="true" class="navbar-brand link-dark" href="/">
+<span class="fs-4 lh-1">Хекслет</span>
+</a>
+<button aria-controls="navbar-responsive" aria-expanded="false" aria-label="Меню" class="navbar-toggler border-0" data-bs-target="#navbar-responsive" data-bs-toggle="collapse">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-collapse collapse" id="navbar-responsive">
+<ul class="navbar-nav algin-items-start me-auto">
+<li><a class="nav-link text-dark px-lg-3" href="/programs">Программы обучения</a></li>
+<li><a class="nav-link text-dark px-lg-3" href="/webinars">Бесплатно</a></li>
+<li><a class="nav-link text-dark px-lg-3" href="/teams">Компаниям</a></li>
+</ul>
+<div class="col-auto text-lg-end py-2 py-lg-0">
+<a class="btn btn-outline-secondary me-2" href="https://ru.hexlet.io/session/new">Вход</a>
+<a class="btn btn-outline-secondary" href="/u/new">Регистрация</a>
+</div>
+</div>
+</header>
+</div>
+<div class="container">
+
+
+</div>
+
+<main class="mb-5">
+<div class="mb-5">
+<div class="container">
+<div class="row mt-3">
+<div class="col-md-7 col-lg-6 d-flex flex-column justify-content-center align-items-start pe-xl-5">
+<h1 class="mb-5">Онлайн-<span class="text-primary">школа программирования</span>, за выпускниками которой <span class="text-primary">охотятся</span> компании
+</h1>
+<p class="lead mb-4">Студенты Хекслета проходят гарантированные собеседования в компаниях-партнёрах</p>
+<a class="btn btn-primary btn-lg px-4" href="#free-start">Начать учиться бесплатно</a>
+</div>
+<div class="col-md-5 col-lg-6 d-none d-md-block px-lg-5">
+<img loading="eager" width="540" height="540" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-hexlet-services-vacancy-e12e76629db7e1444903254d2cb3622f1904adffb914538d006e6cf830974b90.png">
+</div>
+</div>
+</div>
+
+</div>
+<div class="mb-5 pb-5">
+<div class="bg-dark py-5" id="twits">
+<div class="container py-lg-3">
+<div class="row row-cols-1 row-cols-md-2 g-4">
+<div class="col">
+<div class="position-relative x-z-index-0" style="height: 600px">
+<a class="twitter-timeline text-white text-decoration-none position-absolute start-0 top-0 x-z-index-n1" data-height="600" href="https://twitter.com/HexletHQ/timelines/1436015167440134146?ref_src=twsrc%5Etfw">Об этом говорят</a>
+</div>
+</div>
+<div class="col text-white fs-5 order-first order-md-last">
+<div>
+<p>Первого студента мы трудоустроили в <b class="fs-3">2013 году</b>. Тогда требования к знаниям джуниоров были выше, а трава зеленее</p>
+<p>Это отразилось на программах обучения, на их проработке и глубине. Собеседования для студентов Хекслета проходят под девизом: «Хм, на Хекслете задачки были сложнее»</p>
+<p>Иногда наши студенты попадают на работу без проведения технического интервью, только на основе анализа кода проектов</p>
+<p>Сейчас все больше и больше компаний указывают <b class="fs-3">курсы Хекслета как плюс</b> при найме. А наши партнерские компании доверяют нам настолько, что собеседуют выпускников, не заглядывая в резюме</p>
+</div>
+<!-- /- a.btn.btn-light.btn-lg.mt-2(href="#companies") Звучит хорошо, а где работают ваши выпускники? -->
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="mb-5 pb-5">
+<div class="container" id="companies">
+<div class="row">
+<div class="col-md-8 col-lg-6 mx-auto text-center">
+<div class="mb-5">
+<div class="display-6">Наши выпускники работают практически во <span class="text-primary">всех крупных <span class="text-nowrap">IT-компаниях</span></span></div>
+<div class="lead mt-2">Некоторые — на позиции технического директора</div>
+</div>
+</div>
+</div>
+<div class="d-flex flex-wrap align-items-center justify-content-center" style="filter: grayscale(100%);">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="25" alt="Альфа Банк" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-logo-alfa-890ab4ff5e4e9a25bc0b9efcda01c13e5354a6cca336fd6d995edd733d8c5279.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="15" alt="Rambler" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-rambler-1f796b82e7063320f02b0a6957435164993803b95046848107057a615fba39da.png">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3 p-2" width="120" height="51" alt="Regru" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-regru-6b49711ba437059c039c297803c3cdab9163e8565f78eb11a4b12837f14ffebb.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="25" alt="Авиасейлc" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-aviasales-3729dfcb2130db74e8864a8d58c81c671b3ea9f4a9fd709f216c31b80e487272.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="21" alt="Bookmate" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-bookmate-hrz-a3f33ccef0631874729d7c19b2d5bcaa39c8b2a665e55f7da977fe4eaa53bf9e.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="19" alt="Учи.ру" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-uchiru-6f8bc3dfd3cbcc37bd4a6bb4d74613600f6bb35a4321bcfb08ece3395e9a8dc5.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="35" alt="Яндекс" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-yandex-534b368c41381502c28a1c1b57ffcc38dfc6d97b4fb72aee9e4ccb5dbb87c76f.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="32" alt="Тинькофф" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-tinkoff-6f722c6ac77e1cf903f8fed4ce393f61cafb4808a9c796c0b31e522b5e6e77a0.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="25" alt="Agima" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-agima-e79c31f446fc32417baafa0f08a49b795af3e18b776eded6f54e007aae08025a.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3 p-1" width="120" height="60" alt="Funbox" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-funbox-0e00f91be18697dd706746468762f2f156a374ba5bcf02b90903d7307264fc16.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="33" alt="PeterService" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-peter-service-66c6c4c0d6a12fbfd86e6ea6193e5f5da4496f5bb02cbf78258b2129e50c91f0.png">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="33" alt="Simtech" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-simtech-976689f4b2874c2c34d76f6482a76fd4fac0d85b5e09c31488b06a6033d61135.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="35" alt="Health Samurai" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-healthsamurai-de0cbe1265a2fea0977206e00fd46116a7a6abc4bc1eb218e68d5b8333a40196.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="26" alt="Dualboot partners" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-dualboot-4998fb9d0efd0c884ce3655f94a77de9b438cb81e56f47414bc82db11649adfb.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="36" alt="Abbyy" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-abbyy-3e4455e59357c35648eee1b753e1a2e5720b97d5eefbfafe38c7ff74155e4ee3.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="39" alt="Delivery Club" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-dc-35c0306b6e80665e2725d6a751a2d7d39f0aed6da2d1fc1ab6ec99deceff89ec.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="73" alt="Itech Group" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-itech-85226f44e981b57328fa1b77cb630b951c3a3c12fa4dafe5f007834f0327d8dc.png">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="44" alt="Avito Tech" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-avito-tech-d2da2c39edc4c7009ad2b21bd035ef93d953539a12c7ba3e26aed1035a29c0a7.png">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="59" alt="QIWI" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-qiwi-cd3bb8089339132813f22a3702b7331c5232288f691cbeecb3f1150351ff7937.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3 p-4" width="120" height="120" alt="VC.RU" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-vc-ru-0ed11d592e64f832a192cc2d534ffacea381f04cf1f9d58041f0a4eac5380c1c.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="36" alt="Ростелеком ИТ" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-rtk-it-2e17d98ad3dd115907cdca9b1290f8703755c4e1d49a8133097c0773ff985d7e.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="37" alt="Simple life" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-simple-life-8fe544d274c609b02e4f1711c262168a784954f065cc452c9efb310f89de858c.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="33" alt="Комтек" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-pkzdrav-01f68935f799469026a76e5d238f6250bdc3d3bab677c056df3eab39b650b645.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="48" alt="Greenatom" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-greenatom-rossatom-f48a03f8b320af07e3c113c858651d0bd2eadd7022ff126529334d65ca0e5471.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="21" alt="CSSSR" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-csssr-4ed2f90a12fba3e5d8de1d1e86b789e633c33e9927d10a032ca881e36a868960.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="29" alt="JetRockets" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-jetrockets-e5f3a08887203cbb053a6d5731c6173f723ac8caeaac1c5d6d91f04c8855f534.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="16" alt="Sber Devices" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-sber-devices-e3837e95fc5219fc92ff3c53371b57e8dd42d5717cee236cb3d09bebf7b2cd1d.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="47" alt="Flant" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-flant-e577849ccc420a45e8801397d85d04d0cc3e8cb79c5e3602a926ef9ef24e97c0.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="23" alt="CДЭК IT" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-cdek-it-319d9a44c09b19ba5d8a05ecf1ef03e9152a051fe8142af7d62e0642f5c74399.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="39" alt="Контур" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-kontur-5be553853a574d67b17a839c8a713c7987cd1b9a67675f39a155bc6fe12a4a68.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="38" alt="Timeweb" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-timeweb-ab9a98eaef594ca21ac0fe6d701770c91fc88c13f7284f6defba8879508d66f4.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="43" alt="EPAM" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-epam-8abe4be24c95a9025a790a846f64cd11cd0626069005dbde4b86a81a9b043392.png">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="26" alt="OZON" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-ozon-0deeb1b2d8bca56365ef1458051d0b0505906e5e87efe4cf2d9b6fc7bc422426.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="20" alt="EVRONE" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-evrone-e7fcf364a84c4b6d076bab7591534c01c5dd148a8b29c111606450a1384b19dc.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="37" alt="Bell integrator" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-bell-integrator-fa141effd3178641ae54dc890c07826497e8f14825202b4459d5a010ef021b40.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="43" alt="Банк Открытие" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-otkritie-1e9865822c76b4291e3c64567751557d53a934518d5f1c889374c3a49680237d.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="30" alt="МТС" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-mts-225f95143fb83eee597c2926aa97394c3c951fe54d7e5685f3069961541d6c32.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3 px-4" width="120" height="72" alt="One Two Trip" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-one-two-trip-97813aacbba527b3e90098a0df87f30d24574e05701debbfb893bc7c8f927a37.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="29" alt="Онлайн кинотеатр КИОН" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-kion-590ae4e151f6d3f237706ac98e1b440b7f0a4cc0673bd0a1472ff6ec315c08aa.png">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="18" alt="Зарплата.ру" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-zarplataru-32bf371555a1dfe906be53c7d6ddf2bf6ebcec1f63fc23176fbeefce16a3202b.svg">
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="13" alt="СитиМобил" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-city-mobil-7920a107ec666a3790c17c9a794312b6b64974d884c49327fc8566f2ee615dcf.svg">
+<div class="pb-3 mx-3 mx-sm-5 my-3">
+<a target="_blank" rel="noopener" href="/blog/posts/kak-ustroena-rabota-razrabotchika-v-kompanii-insales"><img loading="lazy" width="120" height="40" alt="InSales" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-insales-c271644fe868ef50c894a17756f45fa68dc1a461f937557d5d61c82302598141.svg">
+</a></div>
+<img loading="lazy" class="mx-3 mx-sm-5 my-3" width="120" height="44" alt="ЦИАН" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-logos-cian-a8101c0d1e17be32386f4ed015cab3d11992ae922abb7db678ac5d53d321233d.svg">
+</div>
+
+<div class="text-center mt-5">
+<div>Здесь могли бы быть логотипы других школ,</div>
+<div>в которых работают программистами наши студенты, но боимся, что школы не оценят :)</div>
+</div>
+</div>
+
+</div>
+<div class="mb-5 pb-5">
+<div class="bg-success py-5">
+<div class="container" id="ways">
+<div class="display-6 fw-bold mb-5 text-white">Уговорили! Как начать учиться?</div>
+<div class="card p-4 px-md-5 mb-4 bg-light border-0">
+<div class="card-body">
+<div class="fs-2 fw-bold mb-4">1. Определиться с направлением</div>
+<div class="row g-4">
+<div class="col-md-7">
+<span>Хекслет проводит дни открытых дверей, открытые уроки, публикует истории успехов и аналитику по рынку</span>
+</div>
+<div class="col-md-5">
+<div class="mb-2 mb-md-3">
+<a class="link-dark" href="/webinars">Дни открытых дверей</a>
+</div>
+<div class="mb-2 mb-md-3">
+<a class="link-dark" href="/blog/categories/success">Истории успеха</a>
+</div>
+<div class="mb-2 mb-md-3">
+<a class="link-dark" href="/webinars#articles">Перспективность направлений разработки</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card p-4 px-md-5 mb-4 bg-light border-0">
+<div class="card-body">
+<div class="mb-4 fs-2 fw-bold">2. Выбрать программу обучения</div>
+<div class="row g-4">
+<div class="col-md-7">
+<span>Подходит, если вы уже примерно представляете, что хотите. Если не знаете с чего начать, попробуйте профессию «Фронтенд-разработчик». Наиболее универсальный и популярный вариант</span>
+</div>
+<div class="col-md-5">
+<div class="mb-2 mb-md-3">
+<a class="link-dark" href="/programs/frontend">Фронтенд-разработчик</a>
+</div>
+<div class="mb-2 mb-md-3">
+<a class="link-dark" href="/programs/python">Python-разработчик</a>
+</div>
+<div class="mb-2 mb-md-3">
+<a class="link-dark" href="/programs/php">PHP-разработчик</a>
+</div>
+<div class="mb-2 mb-md-3">
+<a class="link-dark" href="/programs/backend">Node.js-разработчик</a>
+</div>
+<div class="mb-2 mb-md-3">
+<a class="link-dark" href="/programs/layout-designer">Верстальщик</a>
+</div>
+<div class="mb-2 mb-md-3">
+<a class="link-dark" href="/programs/java">Java-разработчик</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="card p-4 px-md-5 mb-4 bg-light border-0">
+<div class="card-body">
+<div class="fs-2 mb-4 fw-bold">3. Начать проходить бесплатную часть</div>
+<div class="row g-4">
+<div class="col-md-7">
+<span>Попробуйте наши бесплатные курсы. Их рекомендуют для старта в профессии опытные разработчики, а другие школы используют для обучения своих студентов</span>
+</div>
+<div class="col-md-5">
+<div class="mb-2 mb-md-3">
+<a class="link-dark" href="/courses/cli-basics">Основы командной строки</a>
+</div>
+<div class="mb-2 mb-md-3">
+<a class="link-dark" href="/courses/intro_to_git">Введение в Git</a>
+</div>
+<div class="mb-2 mb-md-3">
+<a class="link-dark" href="/courses/introduction_to_programming">Основы программирования</a>
+</div>
+<div class="mb-2 mb-md-3">
+<a class="link-dark" href="/courses/layout-designer-basics">Основы современной верстки</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="mb-5 pb-5">
+<div class="py-md-5">
+<div class="container">
+<div class="display-6 fw-bold mb-4">А что если?</div>
+<blockquote class="blockquote mx-5 border-start ps-3 my-5">«Я 35-летний гуманитарий, который забыл школьную математику, а вместо английского учил немецкий. Работа отнимает весь день и приходится мотаться в командировки. У меня семья, ипотека и два кота, а друзья говорят: "Зачем тебе это?". Не уверен, что потяну...»</blockquote>
+<div class="lead">Подобные вопросы нам задают буквально каждый день. Ответ здесь один: не попробуешь — не поймешь. Как Хекслет помогает начать, ничего не теряя?</div>
+<div class="row mt-5 g-0">
+<div class="col-12 col-sm-4 d-flex mb-4">
+<div class="my-lg-auto"><img loading="lazy" width="432" height="216" src="ru-hexlet-io_files/cdn2-hexlet-io-assets-tota-monitor-7d30687bf867aac57b43500ea9457e6fc04bf929a9e0058d8fbba7305056bbce.png"></div>
+</div>
+<div class="col-12 col-sm-8 d-flex">
+<ul class="list-unstyled my-auto fs-5">
+<li class="mb-2">
+<span class="far fa-check mr-2"></span>
+В начале каждой программы — <b>бесплатные курсы</b> с полноценной практикой
+</li>
+<li class="mb-2">
+<span class="far fa-check mr-2"></span>
+Возможность переключиться на <b>любую другую программу</b> прямо в процессе
+</li>
+<li class="mb-2">
+<span class="far fa-check mr-2"></span>
+Мягкие дедлайны. Учитесь <b>в своем темпе</b> и не переживайте насчет отчисления
+</li>
+<li class="mb-2">
+<span class="far fa-check mr-2"></span>
+Полный <b>возврат денег</b> в течение первых двух недель, если не пошло
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="mb-5">
+<div class="bg-warning py-5">
+<div class="container" id="pros">
+<div class="display-6 fw-bold mb-5">Чем ваше обучение отличается от других?</div>
+<div class="row row-cols-1 row-cols-lg-2 g-4">
+<div class="col fs-5">
+<p>Помимо большого количества <b>практик</b>, <b>тренажера в браузере</b>, <b>проектов</b>, <b>наставников</b> и других атрибутов, входящих в стандартный набор хорошего обучения, у нас есть еще несколько важных отличий</p>
+<p>Хекслет создается и развивается программистами, мы даем то, что знаем сами, в чем хорошо разбираемся. И программирование — наш единственный фокус</p>
+<p>Основатель проекта Кирилл Мокевнин <a target="_blank" href="https://twitter.com/mokevnin" class="link-dark">ведет популярный twitter</a> , регулярно <a target="_blank" href="https://techleadconf.ru/2021/abstracts/7710" class="link-dark">выступает на технических конференциях</a> (аж с 2010 года), в подкастах — в качестве <a target="_blank" href="https://www.youtube.com/watch?v=UKjmafONRsg" class="link-dark">приглашенного гостя</a>, проводит <a href="https://ru.hexlet.io/blog/posts/public_interview_ds" target="_blank" class="link-dark">публичные интервью</a> и делает <a target="_blank" class="link-dark" href="https://ru.hexlet.io/blog/posts/intervyu-s-aleksandrom-solovievym-o-clojure-js-i-arhitekture">вебинары о разработке</a> на YouTube-канале</p>
+<p>Немного цифр. С нами работают более <b>150&nbsp;наставников</b>, более <b>20&nbsp;партнерских компаний</b>. Мы поддерживаем более 10&nbsp;открытых проектов (Open Source) и создали <b>тысячи практик</b>, доступных в тренажере</p>
+</div>
+<div class="col">
+<div class="position-relative x-z-index-0" style="height: 600px">
+<a class="twitter-timeline text-dark text-decoration-none position-absolute start-0 top-0 x-z-index-n1" data-height="600" href="https://twitter.com/HexletHQ/timelines/1436020152701706245?ref_src=twsrc%5Etfw">Об этом говорят</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+<div class="mb-5">
+<div class="container py-md-5" id="free-start">
+<div class="mb-2">
+<span class="fad fa-rocket-launch me-2"></span>
+2481 студент
+начали учиться на Хекслете за последнюю неделю
+</div>
+<div class="card p-3 p-sm-4 p-md-5">
+<div class="card-body">
+<div class="row g-4">
+<div class="col-md">
+<div class="fs-4 fw-bold">
+Готовы попробовать?
+<div class="text-primary">20 курсов бесплатно</div>
+</div>
+</div>
+<div class="col-md text-end">
+<form class="simple_form new_user_fast_registration_form" id="new_user_fast_registration_form" novalidate="novalidate" action="/u/create_by_email" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="Jbwvm1fi0XPxq4MSgU7GRYfbuzA6k3n063mu_6qgyFJywqF6u_dm72abVRT3bePMYUXMlvfYMoPQGjFb8xZ2lw"><input type="hidden" name="signup_source" id="signup_source" value="welcome_page">
+<div class="row g-2">
+<div class="col-12 col-lg-6 col-xl-7">
+<div class="col-12 email required user_fast_registration_form_email"><label class="visually-hidden email required" for="user_email">Электронная почта <span title="обязательно">*</span></label><input class="form-control string email required" id="user_email" placeholder="Email" type="email" name="user_fast_registration_form[email]"></div>
+</div>
+<div class="col-12 col-lg-6 col-xl-5">
+<input type="submit" name="commit" value="Зарегистрироваться" class="btn btn-primary w-100" data-disable-with="Зарегистрироваться">
+</div>
+</div>
+<div class="mt-2">
+
+<div class="mb-0 small text-muted">
+Отправляя форму, вы соглашаетесь c «<a href="/pages/privacy" class="text-muted text-decoration-none" target="_blank">Политикой конфиденциальности</a>» и «<a href="/pages/tos" class="text-muted text-decoration-none" target="_blank">Условиями оказания услуг</a>»
+</div>
+</div>
+</form></div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+
+</main>
+<footer class="bg-light border-top py-4 mt-auto">
+<div class="container-xl">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 pt-3">
+<div class="col">
+<ul class="list-unstyled h3 text-start d-flex flex-wrap">
+<li class="mr-4 mb-2">
+<a aria-label="Slack" target="_blank" class="text-muted" rel="noopener noreferrer nofollow" href="https://slack-ru.hexlet.io/"><span class="fab fa-slack fa-1x"></span>
+</a></li>
+<li class="mr-4 mb-2">
+<a aria-label="Youtube" target="_blank" class="text-muted" rel="noopener noreferrer nofollow" href="https://www.youtube.com/user/HexletUniversity"><span class="fab fa-youtube fa-1x"></span>
+</a></li>
+<li class="mr-4 mb-2">
+<a aria-label="Twitter" target="_blank" class="text-muted" rel="noopener noreferrer nofollow" href="https://twitter.com/HexletHQ"><span class="fab fa-twitter fa-1x"></span>
+</a></li>
+<li class="mr-4 mb-2">
+<a aria-label="Telegram" target="_blank" class="text-muted" rel="noopener noreferrer nofollow" href="https://t.me/hexlet_ru"><span class="fab fa-telegram fa-1x"></span>
+</a></li>
+<li class="mr-4 mb-2">
+<a aria-label="Facebook" target="_blank" class="text-muted" rel="noopener noreferrer nofollow" href="https://www.facebook.com/Hexlet"><span class="fab fa-facebook fa-1x"></span>
+</a></li>
+<li class="mr-4 mb-2">
+<a aria-label="ВКонтакте" target="_blank" class="text-muted" rel="noopener noreferrer nofollow" href="https://vk.com/hexlet"><span class="fab fa-vk fa-1x"></span>
+</a></li>
+<li class="mr-4 mb-2">
+<a aria-label="Instagram" target="_blank" class="text-muted" rel="noopener noreferrer nofollow" href="https://www.instagram.com/hexlethq"><span class="fab fa-instagram fa-1x"></span>
+</a></li>
+</ul>
+<ul class="nav flex-column align-items-start">
+<li>
+<a class="nav-link text-muted px-0" href="/pages/about">О проекте</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" target="_blank" rel="noopener noreferrer nofollow" href="https://www.notion.so/hexlet/c6406ed8890747e690d32b050faf42c2">Карьера в Хекслете</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" href="/testimonials">Отзывы студентов</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" href="/blog/categories/success">Истории успеха</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" rel="noopener noreferrer nofollow" href="https://hexlet.printdirect.ru/?partner_id=615497">Магазин мерча</a>
+</li>
+</ul>
+<p class="mt-3 text-muted">
+<span class="d-block">Hexlet Ltd.</span>
+<span class="d-block">UMA Esplanadi, Pohjoisesplanadi 39, 00100 Helsinki, Finland</span>
+<span class="d-block">VAT ID:&nbsp;FI26641607</span>
+</p>
+<ul class="nav flex-column align-items-start">
+<li>
+<a class="nav-link text-muted px-0" href="/pages/tos">Условия использования</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" href="/pages/privacy">Политика конфиденциальности</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" href="/pages/offer">Публичная оферта</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" href="/pages/promo">Акции</a>
+</li>
+</ul>
+</div>
+<div class="col">
+<span class="lead fw-normal d-block">
+<a class="text-muted text-decoration-none" href="tel:8%20800%20333%2057%2004">8 800 333 57 04</a>
+</span>
+<span class="d-block text-muted">Звонок по РФ бесплатный</span>
+<span class="lead fw-normal mt-2 d-block">
+<a class="text-muted text-decoration-none" href="tel:%2B7%20495%20147%2073%2079">+7 495 147 73 79</a>
+</span>
+<div class="fw-bold mt-4 mb-2">Помощь</div>
+<ul class="nav flex-column align-items-start">
+<li>
+<a class="nav-link text-muted px-0" target="_blank" rel="noopener noreferrer" href="https://help.hexlet.io">Справка</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" href="/community">Вопросы по урокам</a>
+</li>
+<li>
+<a rel="nofollow" class="nav-link text-muted px-0" href="mailto:support@hexlet.io">support@hexlet.io</a>
+</li>
+</ul>
+<div class="fw-bold mt-3 mb-2">Компаниям</div>
+<ul class="nav flex-column align-items-start">
+<li>
+<a class="nav-link text-muted px-0" href="/teams">Хекслет для компаний</a>
+</li>
+</ul>
+</div>
+<div class="col">
+<div class="fw-bold mb-2">Профессии</div>
+<ul class="nav flex-column align-items-start">
+<li>
+<a class="nav-link text-muted px-0" target="_blank" rel="noopener noreferrer" href="https://premium.hexlet.io">Индивидуальное обучение программированию</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" href="/programs/frontend">Фронтенд-разработчик</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" href="/programs/python">Python-разработчик</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" href="/programs/php">PHP-разработчик</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" href="/programs/backend">Node.js-разработчик</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" href="/programs/layout-designer">Верстальщик</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" href="/programs/java">Java-разработчик</a>
+</li>
+<li>
+<a class="nav-link text-muted px-0" href="/programs/rails">Разработчик на Ruby on Rails</a>
+</li>
+</ul>
+<a class="nav-link text-muted px-0" href="/courses">Все курсы</a>
+</div>
+<div class="col">
+<div class="fw-bold">Полезно</div>
+<ul class="nav flex-column align-items-start">
+<li class="nav-item">
+<a class="nav-link text-muted px-0" href="/blog">Блог</a>
+</li>
+<li class="nav-item">
+<a class="nav-link text-muted px-0" href="/qna">Вопросы и ответы</a>
+</li>
+<li class="nav-item">
+<a class="nav-link text-muted px-0" href="https://ru.hexlet.io/pages/recommended-books">Рекомендуемые книги</a>
+</li>
+<li class="nav-item">
+<a class="nav-link text-muted px-0" target="_blank" rel="noopener noreferrer" href="https://ru.code-basics.com/">Code Basics</a>
+</li>
+<li class="nav-item">
+<a class="nav-link text-muted px-0" target="_blank" rel="noopener noreferrer" href="https://codebattle.hexlet.io">Code Battle</a>
+</li>
+<li class="nav-item">
+<a class="nav-link text-muted px-0" target="_blank" rel="noopener noreferrer" href="https://guides.hexlet.io/">Hexlet Guides</a>
+</li>
+<li class="nav-item">
+<a class="nav-link text-muted px-0" href="/categories/sandbox/courses">Песочница</a>
+</li>
+<li class="nav-item">
+<a class="nav-link text-muted px-0" target="_blank" rel="noopener noreferrer" href="https://cv.hexlet.io/">Хекслет-резюме</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</footer>
+
+
+
+
+
+</body></html>

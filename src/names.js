@@ -1,5 +1,17 @@
 export const getImageName = (img) => {
-  const imageName = img.replaceAll('/', '-');
+  const imageName = img
+    .replaceAll('/', '-')
+    .replaceAll('_', '-')
+    .replaceAll('.', '-')
+    .replaceAll('https:--', '')
+    .split('')
+    .reverse()
+    .join('')
+    .replace('-', '.')
+    .split('')
+    .reverse()
+    .join('');
+
   return imageName;
 };
 
