@@ -2,7 +2,7 @@
 
 import { program } from 'commander';
 
-import loader from '../index.js';
+import loader from '../src/index.js';
 
 program
   .version('0.0.1')

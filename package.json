@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "[![Actions Status](https://github.com/DrannikovVladimir/backend-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/DrannikovVladimir/backend-project-lvl3/actions)",
-  "main": "index.js",
+  "main": "src/index.js",
   "type": "module",
   "bin": {
     "page-loader": "bin/page-loader.js"
@@ -28,6 +28,7 @@
   "dependencies": {
     "axios": "^0.24.0",
     "cheerio": "^1.0.0-rc.10",
-    "commander": "^8.3.0"
+    "commander": "^8.3.0",
+    "commonjs-variables-for-esmodules": "^1.1.0"
   }
 }
