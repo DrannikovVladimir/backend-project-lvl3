@@ -4,8 +4,8 @@ import { program } from 'commander';
 
 import loader from '../src/index.js';
 
-// const url = 'https://www.coolwaters.kz';
-const url = 'https://ru.hexlet.io';
+const url = 'https://www.coolwaters.kz';
+// const url = 'https://ru.hexlet.io/courses';
 
 program
   .version('0.0.1')

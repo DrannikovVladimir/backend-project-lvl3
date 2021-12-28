@@ -1,18 +1,17 @@
-export const getImageName = (img) => {
-  const imageName = img
+import path from 'path';
+
+export const getImageName = (name) => {
+  if (name === undefined) {
+    return '';
+  }
+  const extname = path.extname(name);
+  const imageName = name
+    .slice(0, name.length - (extname.length))
     .replaceAll('/', '-')
     .replaceAll('_', '-')
-    .replaceAll('.', '-')
-    .replaceAll('https:--', '')
-    .split('')
-    .reverse()
-    .join('')
-    .replace('-', '.')
-    .split('')
-    .reverse()
-    .join('');
+    .replaceAll('.', '-');
 
-  return imageName;
+  return `${imageName}${extname}`;
 };
 
 export const getFileName = (str) => {
