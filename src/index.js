@@ -1,7 +1,10 @@
 /* eslint-disable func-names */
 import fs from 'fs/promises';
+import debug from 'debug';
 import cheerio from 'cheerio';
 import Path from 'path';
+// import 'axios-debug-log';
+
 import {
   getData,
   downloadImage,
@@ -17,6 +20,11 @@ import {
   getScriptLinks,
 } from './dom.js';
 
+const log = debug('page-loader');
+
+// const appName = 'page-loader';
+// debug('booting %s', appName);
+
 const writeData = (data, filename) => fs
   .writeFile(filename, data)
   .catch((error) => console.log('File was not wrote: ', error));
@@ -28,6 +36,7 @@ const createDir = (name) => fs
 const writeResources = (data, dirname) => {
   data.filter((item) => item !== null).map(({ name, link }) => getData(link)
     .then((result) => {
+      log(`${link}`);
       const currentName = getImageName(name);
       const path = Path.join(dirname, currentName);
       writeData(result.data, path);
@@ -77,6 +86,7 @@ const downloadImages = (links, dirname) => {
   });
   data.map(({ name, link }) => downloadImage(link)
     .then((result) => {
+      log(`${link}`);
       const path = Path.join(dirname, name);
       writeData(result, path);
     }));
@@ -116,6 +126,7 @@ const downloadPage = (html, dirname, filename, url) => {
 export default (url) => {
   const filename = getFileName(url);
   const dirname = getDirName(url);
+  log(`Getting data from ${url}`);
 
   getData(url)
     .then((result) => {
