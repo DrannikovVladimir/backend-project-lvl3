@@ -31,6 +31,7 @@
     "cheerio": "^1.0.0-rc.10",
     "commander": "^8.3.0",
     "commonjs-variables-for-esmodules": "^1.1.0",
-    "debug": "^4.3.3"
+    "debug": "^4.3.3",
+    "listr": "^0.14.3"
   }
 }

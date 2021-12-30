@@ -3,7 +3,8 @@ import fs from 'fs/promises';
 import debug from 'debug';
 import cheerio from 'cheerio';
 import Path from 'path';
-// import 'axios-debug-log';
+import Listr from 'listr';
+import 'axios-debug-log';
 
 import {
   getData,
@@ -22,9 +23,6 @@ import {
 
 const log = debug('page-loader');
 
-// const appName = 'page-loader';
-// debug('booting %s', appName);
-
 const writeData = (data, filename) => fs
   .writeFile(filename, data)
   .catch((error) => console.log('File was not wrote: ', error));
@@ -36,7 +34,6 @@ const createDir = (name) => fs
 const writeResources = (data, dirname) => {
   data.filter((item) => item !== null).map(({ name, link }) => getData(link)
     .then((result) => {
-      log(`${link}`);
       const currentName = getImageName(name);
       const path = Path.join(dirname, currentName);
       writeData(result.data, path);
@@ -75,7 +72,7 @@ const downloadScripts = (links, dirname) => {
 
 const downloadImages = (links, dirname) => {
   if (!links) {
-    return;
+    return null;
   }
   const data = links.split(' ').map((link) => {
     const currentLink = new URL(link);
@@ -84,12 +81,17 @@ const downloadImages = (links, dirname) => {
     const name = `${hostname}${pathname}`;
     return ({ name, link });
   });
-  data.map(({ name, link }) => downloadImage(link)
-    .then((result) => {
-      log(`${link}`);
-      const path = Path.join(dirname, name);
-      writeData(result, path);
-    }));
+
+  return data.map(({ name, link }) => {
+    new Listr([{
+      title: name,
+      task: () => downloadImage(link)
+        .then((result) => {
+          const path = Path.join(dirname, name);
+          writeData(result, path);
+        }),
+    }], { concurrent: true, exitOnError: false }).run();
+  });
 };
 
 const downloadPage = (html, dirname, filename, url) => {
@@ -126,7 +128,6 @@ const downloadPage = (html, dirname, filename, url) => {
 export default (url) => {
   const filename = getFileName(url);
   const dirname = getDirName(url);
-  log(`Getting data from ${url}`);
 
   getData(url)
     .then((result) => {
